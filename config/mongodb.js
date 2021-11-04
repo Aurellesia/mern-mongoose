@@ -1,7 +1,8 @@
 const { MongoClient } = require("mongodb");
 
 const url =
-  "mongodb+srv://eduwork:eduwork123@product-cluster.cowyd.mongodb.net/product_db?retryWrites=true&w=majority";
+  // "mongodb+srv://eduwork:eduwork123@product-cluster.cowyd.mongodb.net/product_db?retryWrites=true&w=majority";
+  process.env.MONGODB_URI;
 const client = new MongoClient(url);
 
 (async () => {
