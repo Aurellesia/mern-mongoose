@@ -34,7 +34,7 @@ const store = async (req, res) => {
         price,
         stock,
         status,
-        image_url: `http://localhost:3000/public/${image.originalname}`,
+        image_url: `https://mern-restapi-mongodb.herokuapp.com/public/${image.originalname}`,
       });
       const result = await data.save();
       res.send(result);
@@ -73,7 +73,7 @@ const update = async (req, res) => {
           price,
           stock,
           status,
-          image_url: `http://localhost:3000/public/${image.originalname}`,
+          image_url: `https://mern-restapi-mongodb.herokuapp.com/public/${image.originalname}`,
         }
       );
       res.send(result);

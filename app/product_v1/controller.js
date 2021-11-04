@@ -37,7 +37,7 @@ const store = async (req, res) => {
         price: parseInt(price),
         stock: parseInt(stock),
         status: Boolean(status),
-        image_url: `http://localhost:3000/public/${image.originalname}`,
+        image_url: `https://mern-restapi-mongodb.herokuapp.com/public/${image.originalname}`,
       });
       res.send(result);
     } catch (e) {
@@ -75,7 +75,7 @@ const update = async (req, res) => {
             price: parseInt(price),
             stock: parseInt(stock),
             status: Boolean(status),
-            image_url: `http://localhost:3000/public/${image.originalname}`,
+            image_url: `https://mern-restapi-mongodb.herokuapp.com/public/${image.originalname}`,
           },
         }
       );
