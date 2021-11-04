@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb://eduwork:eduwork123@localhost:27017/product_db?authSource=admin"
+  // "mongodb://eduwork:eduwork123@localhost:27017/product_db?authSource=admin"
+  "mongodb+srv://eduwork:eduwork123@product-cluster.cowyd.mongodb.net/product_db?retryWrites=true&w=majority"
 );
 
 const db = mongoose.connection;

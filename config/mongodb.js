@@ -1,6 +1,7 @@
 const { MongoClient } = require("mongodb");
 
-const url = "mongodb://eduwork:eduwork123@localhost:27017?authSource=admin";
+const url =
+  "mongodb+srv://eduwork:eduwork123@product-cluster.cowyd.mongodb.net/product_db?retryWrites=true&w=majority";
 const client = new MongoClient(url);
 
 (async () => {

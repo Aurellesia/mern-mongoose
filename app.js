@@ -23,6 +23,6 @@ app.use((req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server : http://localhost:3000");
 });
