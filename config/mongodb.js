@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb");
 
 const url =
-  // "mongodb+srv://eduwork:eduwork123@product-cluster.cowyd.mongodb.net/product_db?retryWrites=true&w=majority";
+  // "mongodb://eduwork:eduwork123@localhost:27017/product_db?authSource=admin";
   process.env.MONGODB_URI;
 const client = new MongoClient(url);
 
